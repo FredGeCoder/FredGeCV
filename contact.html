@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Contact Me</title>
+  </head>
+  <body>
+    <p>Phone Number: 1-587-216-6158</p>
+    <p><a href="https://www.inlinegroupinc.ca/">Inline Group Inc.</a></p>
+    <p>4428 Crabapple Landing SW, Edmonton, Alberta, Canada</p>
+    <form class="" action="mailto:gexin@live.ca" method="post" enctype="text/plain"> <!--HTML element represents a document section containing interactive controls for submitting information-->
+    <!--action attribute specifies the action that html takes after user click
+    the "submit" button. The mailto:gexin@live.ca will open up the default mail of the user
+    and email all the information on the form.-->
+    <!--method attribute defines which HTTP method to user when submitting the form. Can be
+    GET or POST-->
+    <!--enctype attribute defines the content type of the form data when the method is
+    POST, this get rid of the weird symbols in the "message box below"-->
+      <label for = "name">Your Name:</label> <!--associate a label with an input, the label needs to have a for attribute-->
+      <input name = "Your Name"type="text" id = "name"><br> <!--associate a label with an input, the input needs to have a "id" attribute-->
+      <label>Your email:</label>
+      <input name = "Your Email" type="email" name="" value=""><br> <!--browser will validate the format of email entered by user, by having the type = "email" attribute-->
+      <label for="message">Your message:</label><br>
+      <!--A message box, default message in between the tags-->
+      <textarea name="You Message" id="message" cols="30" rows="10">Type your message here...</textarea><br><!--The name attribute set the name of the associated data point submitted to the server when the form is submitted-->
+      <input type="submit">
+    </form>
+  </body>
+</html>
